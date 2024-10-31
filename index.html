@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c735d07c5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AIML Student</p>
+            <h1>Hi, I'm <span>Raviraj</span><br>More From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/ravi3.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I’m Raviraj, a third-year Artificial Intelligence and Machine Learning Engineering student, driven by curiosity and a passion for innovative tech solutions. My journey so far includes building projects that blend creativity with technical expertise, from designing an AI-powered voice assistant named NEO to exploring environmental and health-focused projects.<br>I am currently a Microsoft Learn Student Ambassador and have recently published a research paper titled "NEO - Artificial Intelligence Virtual Assistant Access Control" in the Journal of Artificial Neural Networks and Learning System. With hands-on experience from my internship at Maxgen Technologies and my commitment to continuous learning, I am set on a path to specialize further in Cybersecurity or Artificial Intelligence.Alongside my studies, I'm developing a business idea called Prakruti Utpanna, aimed at revolutionizing organic farming. <br>I believe in the power of technology to drive positive change, and I’m excited to bring my knowledge and skills to impactful projects. When I’m not coding or researching, you’ll find me exploring new technologies and brainstorming ideas to tackle real-world challenges.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Artificial Intelligence</span><br>AI Voice Assistants | Natural Language Processing | Automation Systems</li>
+                        <li><span>Machine Learning</span><br>Predictive Modeling | Supervised & Unsupervised Learning | Model Optimization</li>
+                        <li><span>Data Sciencet</span><br>Data Analysis & Visualization | Statistical Analysis | Big Data Handling</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June 2024 - July 2024</span><br>Internship At Maxgen Technologies PVT. LTD. Pune</li>
+                        <!-- <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Present</span><br>Diploma In Artificial Intelligence and Machine Learning Engineering <br>Dr. Bapuji Salunke Institute Of Engineering & Technology, Kolhapur. </li>
+                        <li><span>2022</span><br>SSC.</li>
+                        <!-- <li><span>2014</span><br>BBA from ISM Bangalore.</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Artificial Intelligence Model Making </h2>
+                <p>Developing intelligent systems that automate complex tasks using cutting-edge AI technologies.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Machine Learning Model Making</h2>
+                <p>Creating predictive models to derive insights and solve real-world problems with data-driven solutions.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Automation</h2>
+                <p>Designing automation solutions to streamline workflows and improve efficiency across various processes.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>NEO - An Artificial Intelligence Voice Assistant </h3>
+                    <p>An AI-powered voice assistant capable of performing automation tasks and providing voice-based assistance.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Personalized Healthcare App</h3>
+                    <p>A healthcare app that uses AI to predict diseases based on personalized health data for proactive care.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Rainfall Prediction</h3>
+                    <p>A machine learning model designed to predict rainfall patterns in India, aiding agricultural planning. </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> moreraviraj7727@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +919130817727</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook" style="color: #B197FC;"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter" style="color: #B197FC;"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram" style="color: #B197FC;"></i></a>
+                    <a href="https://www.linkedin.com/in/raviraj-more-a644b8283/"><i class="fab fa-linkedin" style="color: #B197FC;"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Raviraj More (Alpha Microsoft Student Learn Ambassador).</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://kit.fontawesome.com/c735d07c5d.js' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
